@@ -11,8 +11,9 @@ public class App
 {
     public static void main( String[] args ) throws NoSuchAlgorithmException {
 
+        // Other than the password, all others are optional and default values will be picked up.
         if (args.length < 1) {
-            System.out.print("Usage: password [salt] [hash algorithm] [iteration count] [key length].");
+            System.out.print("Usage: password [salt] [hash algorithm] [iteration count] [key length]. [] are optional");
         }
 
         String password = args[0];
